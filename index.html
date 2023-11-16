@@ -15,8 +15,11 @@
 <script>
 let el = document.getElementById("theEmbed");
 const url = new URL(window.location.toLocaleString());
-const searchParams = url.searchParams;
-const ID = searchParams.get('ID');
+console.log(url);
+const SParams = url.searchParams;
+console.log(SParams);
+const ID = SParams.get('ID');
+console.log(ID);
 el.setAttribute("assignmentID", ID);
 el.load(); 
 
