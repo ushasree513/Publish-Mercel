@@ -15,11 +15,10 @@
 
 
 
-<pega-embed id='theEmbed' action='openAssignment' assignmentID='' casePage='assignment' appAlias='enrollment-reconsideration' 
-pegaServerUrl='https://areteans05.pegalabs.io/prweb/PRServlet/app/enrollment-reconsideration/' 
-staticContentUrl='https://prod-cdn.constellation.pega.io/8.23.0-110/react/prod/' 
-authService='none' assignmentHeader='false' userIdentifier='Samuel@InfoTechSolutions' password='cnVsZXM=' deferLoad='true' clientId='13104442428080708017' style='width:100%'>
+
+<pega-embed id='theEmbed' action='createCase' caseTypeID='Mercer-Enrollment-Work-ReconsiderationRequest' casePage='assignment' appAlias='enrollment-reconsideration' pegaServerUrl='https://areteans05.pegalabs.io/prweb/' staticContentUrl='https://prod-cdn.constellation.pega.io/8.23.0-110/react/prod/' authService='pega' userIdentifier='Samuel@InfoTechSolutions' password='cnVsZXM=' clientId='18326593969015452429' style='width:100%'>
 </pega-embed>
+
 <script>
     let el = document.getElementById("theEmbed");
     const url = new URL(window.location.toLocaleString());
