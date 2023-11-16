@@ -12,18 +12,7 @@
 	</head>
 	<body>
 <script src='https://prod-cdn.constellation.pega.io/8.23.0-110/react/prod/pega-embed.js'></script>
-<script>
-let el = document.getElementById("theEmbed");
-const url = new URL(window.location.toLocaleString());
-console.log(url);
-const SParams = url.searchParams;
-console.log(SParams);
-const ID = SParams.get('ID');
-console.log(ID);
-el.setAttribute("assignmentID", ID);
-el.load(); 
 
-</script>
 
 
 <pega-embed id='theEmbed' action='openAssignment' 
@@ -33,6 +22,18 @@ pegaServerUrl='https://areteans05.pegalabs.io/prweb/PRServlet/app/enrollment-rec
 staticContentUrl='https://prod-cdn.constellation.pega.io/8.23.0-110/react/prod/' 
 authService='pega' userIdentifier="ushasree.pottluri@areteanstech.com" password="UnVsZXNAMTIz" deferLoad='true' clientId='13104442428080708017' style='width:100%'>
 </pega-embed>
+<script>
+    let el = document.getElementById("theEmbed");
+    const url = new URL(window.location.toLocaleString());
+    console.log(url);
+    const SParams = url.searchParams;
+    console.log(SParams);
+    const ID = SParams.get('ID');
+    console.log(ID);
+    el.setAttribute("assignmentID", ID);
+    el.load(); 
+    
+    </script>
 
 </body>
 </html>
