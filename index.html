@@ -1,0 +1,16 @@
+<script src='https://prod-cdn.constellation.pega.io/8.23.0-110/react/prod/pega-embed.js'></script>
+<pega-embed id='theEmbed' action='openAssignment' 
+assignmentID= .ID 
+casePage='assignment' 
+appAlias='enrollment-reconsideration' 
+pegaServerUrl='https://areteans05.pegalabs.io/prweb/PRServlet/app/enrollment-reconsideration/' 
+staticContentUrl='https://prod-cdn.constellation.pega.io/8.23.0-110/react/prod/' 
+authService='pega' deferLoad='true' clientId='13104442428080708017' style='width:100%'>
+</pega-embed>
+<script>
+let el = document.getElementById("theEmbed");
+const url = new URL(window.location.toLocaleString());
+const searchParams = url.searchParams;
+const ID = searchParams.get('ID');
+</script>
+
