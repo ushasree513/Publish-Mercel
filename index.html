@@ -1,3 +1,35 @@
-<script src='https://prod-cdn.constellation.pega.io/8.23.0-110/react/prod/pega-embed.js' ></script>
-<pega-embed id='theEmbed' action='openAssignment' assignmentID='ASSIGN-WORKLIST MERCER-ENROLLMENT-WORK R-29!INITIALREVIEW_FLOW' casePage='assignment' appAlias='enrollment-reconsideration' pegaServerUrl='https://areteans05.pegalabs.io/prweb/PRServlet/app/enrollment-reconsideration/' staticContentUrl='https://prod-cdn.constellation.pega.io/8.23.0-110/react/prod/' authService='pega' userIdentifier="ushasree.pottluri@areteanstech.com" password="UnVsZXNAMTIz" deferLoad='true' clientId='13104442428080708017' style='width:100%'>
+!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Pega Academy</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	</head>
+	<body>
+<script src='https://prod-cdn.constellation.pega.io/8.23.0-110/react/prod/pega-embed.js'></script>
+<script>
+let el = document.getElementById("theEmbed");
+const url = new URL(window.location.toLocaleString());
+const searchParams = url.searchParams;
+const ID = searchParams.get('ID');
+el.setAttribute("assignmentID", ID);
+el.load(); 
+
+</script>
+
+
+<pega-embed id='theEmbed' action='openAssignment' 
+casePage='assignment' 
+appAlias='enrollment-reconsideration' 
+pegaServerUrl='https://areteans05.pegalabs.io/prweb/PRServlet/app/enrollment-reconsideration/' 
+staticContentUrl='https://prod-cdn.constellation.pega.io/8.23.0-110/react/prod/' 
+authService='pega' userIdentifier="ushasree.pottluri@areteanstech.com" password="UnVsZXNAMTIz" deferLoad='true' clientId='13104442428080708017' style='width:100%'>
 </pega-embed>
+
+</body>
+</html>
